@@ -127,42 +127,46 @@
     <section class="py-5 text-black bg-white" id="contactos">
         <div class="container">
             <div class="row g-4 mt-4">
-                <div class="col-md-4">
+                <div class="col-md-12">
                     <h3>Marque a Sua Consulta</h3>
                     <form action="https://formspree.io/f/xyzjwvoo" method="POST">
-                        <div class="mb-3">
-                            <label class="form-label">Nome do Pai</label>
-                            <input type="text" name="nome_do_pai" class="form-control" placeholder="O seu nome completo"
-                                required>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Nome do Cuidador</label>
+                                <input type="text" name="nome_do_cuidador" class="form-control" placeholder="O seu nome completo" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Nome da Criança</label>
+                                <input type="text" name="nome_da_crianca" class="form-control" placeholder="Nome da criança" required>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Nome da Criança</label>
-                            <input type="text" name="nome_da_crianca" class="form-control" placeholder="Nome da criança"
-                                required>
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Idade da Criança</label>
+                                <input type="text" name="idade_da_crianca" class="form-control" placeholder="Ex: 3 anos">
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Contacto</label>
+                                <input type="tel" name="contacto_tel" class="form-control" placeholder="Número de telefone" required>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Idade da Criança</label>
-                            <input type="text" name="idade_da_crianca" class="form-control" placeholder="Ex: 3 anos">
+                        <div class="row">
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Email</label>
+                                <input type="email" name="email" class="form-control" placeholder="O seu email" required>
+                            </div>
+                            <div class="col-md-6 mb-3">
+                                <label class="form-label">Motivo da Consulta</label>
+                                <textarea name="motivo_da_consulta" class="form-control" placeholder="Descreva brevemente o motivo da consulta ou questões que gostaria de abordar"></textarea>
+                            </div>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Contacto</label>
-                            <input type="tel" name="contacto_tel" class="form-control" placeholder="Número de telefone"
-                                required>
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-outline-dark border rounded">Enviar Pedido</button>
                         </div>
-                        <div class="mb-3">
-                            <label class="form-label">Email</label>
-                            <input type="email" name="email" class="form-control" placeholder="O seu email" required>
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Motivo da Consulta</label>
-                            <textarea name="motivo_da_consulta" class="form-control"
-                                placeholder="Descreva brevemente o motivo da consulta ou questões que gostaria de abordar"></textarea>
-                        </div>
-                        <button type="submit" class="btn btn-outline-dark border rounded">Enviar Pedido</button>
                     </form>
                 </div>
             </div>
-            <h2 class="fw-light mt-3 text-start">Contactos</h2>
+            <h2 class="fw-light my-3 text-start">Contactos</h2>
             <div class="row g-4 align-items-start">
                 <div class="col-md-4">
                     <h3>Localização</h3>
